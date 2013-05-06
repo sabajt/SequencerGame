@@ -19,6 +19,7 @@
 #import "TickDispatcher.h"
 #import "SGTiledUtils.h"
 #import "Arrow.h"
+#import "MainSynth.h"
 
 static NSUInteger const kTotalPatternTicks = 8;
 static NSUInteger const kTotalHeartTypes = 4;
@@ -222,13 +223,24 @@ typedef enum
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-//    CGPoint touchPosition = [self convertTouchToNodeSpace:touch];
-//
-//    for (Arrow *arrow in self.arrows) {
-//        if (CGRectContainsPoint(arrow.boundingBox, touchPosition)) {
-//            self.draggingArrow = arrow;
-//        }
-//    }
+    CGPoint touchPosition = [self convertTouchToNodeSpace:touch];
+
+    for (Tone *tone in self.tones) {
+        if (CGRectContainsPoint(tone.boundingBox, touchPosition)) {
+            NSString *event = [(id<TickResponder>)tone tick:kBPM];
+            [self.tickDispatcher.mainSynth loadEvents:@[event]];
+            self.pressedTone = tone;
+        }
+    }
+    for (Arrow *arrow in self.arrows) {
+        if (CGRectContainsPoint(arrow.boundingBox, touchPosition)) {
+            [arrow rotateClockwise];
+            NSString *event = [(id<TickResponder>)arrow tick:kBPM];
+            [self.tickDispatcher.mainSynth loadEvents:@[event]];
+        }
+    }
+
+    
     return YES;
 }
 //
@@ -243,14 +255,10 @@ typedef enum
 
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    CGPoint touchPosition = [self convertTouchToNodeSpace:touch];
-
-    for (Arrow *arrow in self.arrows) {
-        if (CGRectContainsPoint(arrow.boundingBox, touchPosition)) {
-            [arrow rotateClockwise];
-        }
+    if (self.pressedTone != nil) {
+        [self.pressedTone deselectTone];
+        self.pressedTone = nil;
     }
-    
 }
 
 //- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event

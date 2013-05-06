@@ -46,6 +46,11 @@
     return self.cell;
 }
 
+- (void)deselectTone
+{
+    [SpriteUtils switchImageForSprite:self.sprite textureKey:[self imageNameForMidiValue:self.midiValue on:NO]];
+}
+
 #pragma mark
 
 - (NSString *)imageNameForMidiValue:(int)midi on:(BOOL)on

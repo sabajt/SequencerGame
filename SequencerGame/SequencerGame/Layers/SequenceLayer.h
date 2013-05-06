@@ -11,7 +11,7 @@
 #import "GridUtils.h"
 #import "PdDispatcher.h"
 
-@class CellObjectLibrary, TickDispatcher, Arrow;
+@class CellObjectLibrary, TickDispatcher, Tone;
 
 @interface SequenceLayer : CCLayer
 {
@@ -28,8 +28,7 @@
 @property (nonatomic, strong) NSMutableArray *arrows;
 
 @property (assign) GridCoord gridSize;
-
-@property (weak, nonatomic) Arrow *draggingArrow;
+@property (nonatomic, weak) Tone *pressedTone;
 
 //////////
 @property (assign) CGPoint gridOrigin;

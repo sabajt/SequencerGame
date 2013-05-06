@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "GridUtils.h"
+#import "MainSynth.h"
+
+FOUNDATION_EXPORT NSInteger const kBPM;
 
 
 @protocol TickResponder <NSObject>
@@ -29,6 +32,9 @@ typedef enum
 
 @property (assign) int sequenceLength;
 @property (nonatomic, strong) NSMutableDictionary *eventSequence;
+
+@property (strong, nonatomic) MainSynth *mainSynth;
+
 
 - (id)initWithEventSequence:(NSMutableDictionary *)sequence entry:(NSMutableDictionary *)entry tiledMap:(CCTMXTiledMap *)tiledMap;
 - (void)registerTickResponder:(id<TickResponder>)responder;

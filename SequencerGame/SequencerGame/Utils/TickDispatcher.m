@@ -12,9 +12,9 @@
 #import "Arrow.h"
 #import "SGTiledUtils.h"
 #import "CCTMXTiledMap+Utils.h"
-#import "MainSynth.h"
+//#import "MainSynth.h"
 
-static NSInteger const kBPM = 120;
+NSInteger const kBPM = 120;
 static CGFloat const kTickInterval = 0.5;
 
 
@@ -29,7 +29,6 @@ static CGFloat const kTickInterval = 0.5;
 @property (assign) kDirection currentDirection;
 @property (assign) int sequenceIndex;
 @property (assign) GridCoord gridSize;
-@property (strong, nonatomic) MainSynth *mainSynth;
 
 @end
 
