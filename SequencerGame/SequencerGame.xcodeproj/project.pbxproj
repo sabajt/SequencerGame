@@ -203,7 +203,6 @@
 		169B8D8E1735A50B0002FD60 /* Arrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B8D8D1735A50B0002FD60 /* Arrow.m */; };
 		169FC6B9173475AE008EC4C4 /* CellObjectLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 169FC6B8173475AE008EC4C4 /* CellObjectLibrary.m */; };
 		169FC6BD1734A2E2008EC4C4 /* CellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 169FC6BC1734A2E1008EC4C4 /* CellNode.m */; };
-		16B9C9F71736FCA9006A591C /* MainSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9C9F61736FCA9006A591C /* MainSynth.m */; };
 		16E256D917371AAD00F45198 /* seq0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 16E256D817371AAD00F45198 /* seq0.tmx */; };
 		16E256DD17372A6200F45198 /* seq2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 16E256DB17372A6100F45198 /* seq2.tmx */; };
 		16E256DE17372A6200F45198 /* seq3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 16E256DC17372A6100F45198 /* seq3.tmx */; };
@@ -237,6 +236,7 @@
 		16E257191737312E00F45198 /* Fsharp.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E256FB1737312E00F45198 /* Fsharp.png */; };
 		16E2571A1737312E00F45198 /* G-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E256FC1737312E00F45198 /* G-on.png */; };
 		16E2571B1737312E00F45198 /* G.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E256FD1737312E00F45198 /* G.png */; };
+		16E2571D17377E8F00F45198 /* MainSynth.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E2571C17377E8F00F45198 /* MainSynth.m */; };
 		3D11F3661735A54D00172154 /* TickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D11F3651735A54D00172154 /* TickerView.m */; };
 		D258C83F1735817E0056EE96 /* SequenceMenuCellLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258C83E1735817E0056EE96 /* SequenceMenuCellLabel.xib */; };
 		D258C842173582200056EE96 /* SAViewManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = D258C841173582200056EE96 /* SAViewManipulator.m */; };
@@ -625,7 +625,6 @@
 		169FC6BB1734A2E1008EC4C4 /* CellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellNode.h; path = Nodes/CellNode.h; sourceTree = "<group>"; };
 		169FC6BC1734A2E1008EC4C4 /* CellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellNode.m; path = Nodes/CellNode.m; sourceTree = "<group>"; };
 		16B9C9EA1736F31D006A591C /* MainSynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainSynth.h; path = PdUtils/MainSynth.h; sourceTree = "<group>"; };
-		16B9C9F61736FCA9006A591C /* MainSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainSynth.m; path = PdUtils/MainSynth.m; sourceTree = "<group>"; };
 		16E256D817371AAD00F45198 /* seq0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = seq0.tmx; path = Resources/seq0.tmx; sourceTree = "<group>"; };
 		16E256DB17372A6100F45198 /* seq2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = seq2.tmx; path = Resources/seq2.tmx; sourceTree = "<group>"; };
 		16E256DC17372A6100F45198 /* seq3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = seq3.tmx; path = Resources/seq3.tmx; sourceTree = "<group>"; };
@@ -659,6 +658,7 @@
 		16E256FB1737312E00F45198 /* Fsharp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fsharp.png; sourceTree = "<group>"; };
 		16E256FC1737312E00F45198 /* G-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "G-on.png"; sourceTree = "<group>"; };
 		16E256FD1737312E00F45198 /* G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G.png; sourceTree = "<group>"; };
+		16E2571C17377E8F00F45198 /* MainSynth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainSynth.m; path = PdUtils/MainSynth.m; sourceTree = "<group>"; };
 		3D11F3641735A54D00172154 /* TickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickerView.h; sourceTree = "<group>"; };
 		3D11F3651735A54D00172154 /* TickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickerView.m; sourceTree = "<group>"; };
 		D258C83E1735817E0056EE96 /* SequenceMenuCellLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SequenceMenuCellLabel.xib; sourceTree = "<group>"; };
@@ -1283,8 +1283,8 @@
 		16B9C9ED1736F515006A591C /* PdUtils */ = {
 			isa = PBXGroup;
 			children = (
-				16B9C9F61736FCA9006A591C /* MainSynth.m */,
 				16B9C9EA1736F31D006A591C /* MainSynth.h */,
+				16E2571C17377E8F00F45198 /* MainSynth.m */,
 			);
 			name = PdUtils;
 			sourceTree = "<group>";
@@ -1676,7 +1676,7 @@
 				D2B34DEE1735B52D00199562 /* InfoViewController.m in Sources */,
 				D2B34DF11735C24500199562 /* UIViewController+ExpandTransition.m in Sources */,
 				D2B34DF51735CFC700199562 /* NSObject+BlockAfterDelay.m in Sources */,
-				16B9C9F71736FCA9006A591C /* MainSynth.m in Sources */,
+				16E2571D17377E8F00F45198 /* MainSynth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
